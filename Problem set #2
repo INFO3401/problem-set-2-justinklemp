@@ -1,0 +1,36 @@
+                            Problem Set #2
+                            
+Justin Klemperer
+INFO3401
+
+1.) 
+    cd ~ = Changes the directory to the home level directory
+    mkdir ./problem_set_1 = Creates a new directory located in the home called problem_set_1
+    touch submission.txt = Creates a brand new file in the home directory called submission.txt
+    cd .. = changes to the previous directory above that the user previously had
+    pwd = shows home directory
+    
+2.)
+    Copy a document called config.txt from your home directory to the root directory.
+        ---> cp ~/config.txt .
+    Create a new directory in the root called preferences.
+        ---> mkdir.preferences
+    Within preferences, copy prefs.txt from a matching directory called preferences in your home directory.
+        ---> cd preferences ---> cp~/preferences/prefs.txt.
+    Finally, determine that the start and end of the config.txt document in both root and home match
+        ---> head -n 50 config.txt ---> tail -n 50 config.txt
+
+3.)
+    Root = This shortcut for root allows easy access to the basis and start of all other files that may branch from the root.
+    Home = This shortcut is important because most files stored on the users device are stored into this directory.
+    Parent = This shortcut helps the user see the what is the stemming directly above whatever the user is working on. It shows where this work is stemming from.
+    
+4.)
+    Assume all of the directories below are valid directories (e.g., they exist and we have access to them). What would the following print out? 
+
+        cd /usrs/INFO3401/../homework/./problem1 ---> pwd = "/usrs/homework/problemset1"
+
+5.)
+    You have accidentally moved a file (~/Documents/datafile.csv) to your current directory rather than copying it. What command did you use to do that? What command should you have used to do that? What command might you use to undo it?
+        mv ~/Documents/datafile.csv ---> cp~Documents/datafile.csv ---> cp ./datafile.csv ~/Documents/datafile.csv
+        
